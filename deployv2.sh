@@ -23,7 +23,7 @@ cd ..
 echo "Copying content of cloned git directory to var/www/html"
 # Checking if there are files in the var/www/html directory and deleting if any
 if [ -f "/var/www/html/index.html" ] || [ -f "/var/www/html/README.md" ] || [ -f "/var/www/html/styles.css" ]; then 
-  sudo rm *
+  sudo rm index.html README.md styles.css
 fi
 cd /home/ci-cd-pipeline-project/
 cp index.html styles.css README.md  /var/www/html/
