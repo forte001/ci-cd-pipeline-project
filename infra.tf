@@ -1,4 +1,13 @@
 terraform {
+backend "remote" {
+         # The name of your Terraform Cloud organization.
+         organization = "Forte001"
+
+         # The name of the Terraform Cloud workspace to store Terraform state files in.
+         workspaces {
+           name = "ci-cd-pipeline"
+        }
+       }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
