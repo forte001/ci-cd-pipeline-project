@@ -1,7 +1,7 @@
 # ci-cd-pipeline-project
 
 ## Introduction
-This project is aimed at creating a simple deployment pipeline. It is not the ideal pipeline for production environments, but a starting point to get a foretaste of what deployment automation looks like. The pipeline will create the environment for the application to run and also deploy the application. The application is a simple one-page web application.
+This project is aimed at creating a simple CI/CD pipeline. It is not the ideal pipeline for production environments, but a starting point to get a foretaste of what deployment automation looks like. The pipeline will create the environment for the application to run and also deploy the application. The application is a simple one-page web application.
 
 ## Requirements
 •	AWS account
