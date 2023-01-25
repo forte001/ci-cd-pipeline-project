@@ -9,7 +9,7 @@ This project is aimed at creating a simple end-to-end CI/CD pipeline. It is not 
 •	Github account with Git Actions setup
 
 ## Procedure
-The `deployv2`.sh is a bash script that, when run in a Linux environment, installs updates for Linux, Apache, and git. It then clones the repository defined and copies the content of the repository to the appropriate directory (var/www/html). The index.html can then be displayed as a web page.
+The `deployv2.sh` is a bash script that, when run in a Linux environment, installs updates for Linux, Apache, and git. It then clones the repository defined and copies the content of the repository to the appropriate directory (var/www/html). The index.html can then be displayed as a web page.
 
 The Terraform configuration, infra.tf, creates the deployment environment. The infrastructure is created on AWS. When infra.tf is run, it creates a VPC in the us-east-2 region with:
 •	a CIDR block
