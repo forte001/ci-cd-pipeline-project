@@ -112,3 +112,11 @@ module "ec2_instance" {
     Environment = "dev"
   }
 }
+
+
+# This outputs the public ip of the EC2 instance
+
+output "ec2_global_ips" {
+  description = " The Public IPs of the Ec2 instances created "
+  value = ["${module.ec2_instance.*.public_ip}"]
+}
